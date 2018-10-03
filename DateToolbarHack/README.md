@@ -29,13 +29,13 @@ exit /b
 
 :getShortDate
 for /f "skip=1 tokens=1-3" %%A in ('wmic path Win32_LocalTime get day^,month^,year /value /format:table') do (
-set day=00%%A
-set day=!day:~-2!
-set month=00%%B
-set month=!month:~-2!
-set year=%%C
-set year=!year:~-2!
-exit /b
+  set day=00%%A
+  set day=!day:~-2!
+  set month=00%%B
+  set month=!month:~-2!
+  set year=%%C
+  set year=!year:~-2!
+  exit /b
 )
 ```
 
