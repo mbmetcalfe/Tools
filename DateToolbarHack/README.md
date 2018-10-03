@@ -19,7 +19,7 @@ The idea is to create a new toolbar pointing to a folder whose only content is a
 
 1. Copy the following code and paste it in a new file called `UpdateToolbar.cmd` inside the `DateToolbarHack` folder:
 
-```dos
+```batch
 @echo off
 setlocal enabledelayedexpansion
 cd /d "%~dp0\Date"
